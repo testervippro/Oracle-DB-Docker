@@ -34,13 +34,7 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 ```powershell
 docker pull cuxuanthoai/oracle-19c
 
-docker run --name oracle-19c ^
--p 1521:1521 ^
---env ORACLE_SID=orcl ^
---env ORACLE_PWD=123456789 ^
---env ORACLE_MEM=2000 ^
--v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata ^
-cuxuanthoai/oracle-19c
+run file run.ps1
 # Oracle Container Setup
 
 The container is successfully running when you see output similar to this:

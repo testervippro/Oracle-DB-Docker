@@ -47,8 +47,9 @@ The container is successfully running when you see output similar to this
 =================================================================
 
 Once the container is running, use SQL*Plus to connect to the Oracle database:
-OR Sql developer connnect to sys user and paste to run
-docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba
+OR 
+docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba @/opt/oracle/hr.sql
+
 
 
 

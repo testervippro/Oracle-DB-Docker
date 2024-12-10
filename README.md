@@ -45,6 +45,10 @@ cuxuanthoai/oracle-19c
 The container is successfully running when you see output similar to this
 
 =================================================================
+![image](https://github.com/user-attachments/assets/cab922ae-5df1-4aff-be7b-b3d7a02e7edb)
+
+![image](https://github.com/user-attachments/assets/56098361-9542-46e1-aa3c-7b052121e8f4)
+
 
 Once the container is running, use SQL*Plus to connect to the Oracle database:
 name : HR

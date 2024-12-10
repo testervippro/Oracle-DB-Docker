@@ -1,10 +1,24 @@
-# Oracle-DB-fast-setup
-Fast setup Oracle DB use docker
-Install docker desktop 
-create file .wslconfig  
-[wsl2]
-memory=2GB   # Limits VM memory in WSL 2 up to 2GB
-processors=2  # Makes the WSL 2 VM use two virtual processors
+# Oracle-DB-Fast-Setup
+
+A quick and easy guide to setting up Oracle Database using Docker.
+
+---
+
+## **Prerequisites**
+
+1. **Install Docker Desktop**  
+   - Download and install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop).
+   - Ensure Docker Desktop is configured to use WSL 2.
+
+2. **Configure WSL 2**  
+   Create or edit the `.wslconfig` file in your user directory (`C:\Users\<YourUsername>\`) to optimize WSL 2 resources.
+
+   ### **.wslconfig**
+   ```ini
+   [wsl2]
+   memory=2GB   # Limits VM memory in WSL 2 up to 2GB
+   processors=2 # Makes the WSL 2 VM use two virtual processors
+
 ![image](https://github.com/user-attachments/assets/224afca4-25fc-4979-86db-75fe0b6319ee)
 
 # Oracle 19c Docker Container Setup

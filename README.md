@@ -41,18 +41,26 @@ docker run --name oracle-19c ^
 --env ORACLE_MEM=2000 ^
 -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata ^
 cuxuanthoai/oracle-19c
+# Oracle Container Setup
 
-The container is successfully running when you see output similar to this
+The container is successfully running when you see output similar to this:
 
-=================================================================
+---
+
 ![image](https://github.com/user-attachments/assets/cab922ae-5df1-4aff-be7b-b3d7a02e7edb)
 
 ![image](https://github.com/user-attachments/assets/56098361-9542-46e1-aa3c-7b052121e8f4)
 
+---
 
-Once the container is running, use SQL*Plus to connect to the Oracle database:
-name : HR
-pass :hrpass
+### Once the container is running, use SQL*Plus to connect to the Oracle database:
+
+- **Username**: HR  
+- **Password**: hrpass  
+
+Run the following command to connect to the Oracle database and execute the `hr.sql` script:
+
+```bash
 docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba @/opt/oracle/hr.sql
 
 

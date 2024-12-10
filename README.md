@@ -7,7 +7,17 @@ memory=2GB   # Limits VM memory in WSL 2 up to 2GB
 processors=2  # Makes the WSL 2 VM use two virtual processors
 ![image](https://github.com/user-attachments/assets/224afca4-25fc-4979-86db-75fe0b6319ee)
 
-# Pull image and run cmd use powershell
+# Oracle 19c Docker Container Setup
+
+This guide outlines the steps to pull, run, and connect to an Oracle 19c database using Docker.
+
+---
+
+## **Step 1: Pull the Oracle 19c Docker Image**
+
+Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
+
+```powershell
 docker pull cuxuanthoai/oracle-19c
 
 docker run --name oracle-19c ^
@@ -18,15 +28,13 @@ docker run --name oracle-19c ^
 -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata ^
 cuxuanthoai/oracle-19c
 
-Run until diplay it's mean run success
+The container is successfully running when you see output similar to this
+
 =================================================================
 
-
-Connect to the Oracle Database Once the container is running, you can connect to the Oracle database using SQL*Plus.
-
-Run the following command:
-
-docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba This command connects you to the Oracle database as the SYS user.
+Once the container is running, use SQL*Plus to connect to the Oracle database:
+OR Sql developer connnect to sys user and paste to run
+docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba
 
 
 

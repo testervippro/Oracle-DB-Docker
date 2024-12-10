@@ -61,7 +61,9 @@ The container is successfully running when you see output similar to this:
 Run the following command to connect to the Oracle database and execute the `hr.sql` script:
 
 ```bash
-docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba
+Use powershell ( add `@ to can run )
+docker exec -it oracle-19c sqlplus sys/123456789@localhost:1521/orcl as sysdba `@/opt/oracle/hr.sql
+
 
 
 

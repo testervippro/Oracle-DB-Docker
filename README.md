@@ -24,7 +24,7 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 ```powershell
 docker pull cuxuanthoai/oracle-19c:customized
 
-run file run.ps1
+Copy script in run.ps1 and run it
 # Oracle Container Setup
 
 The container is successfully running when you see output similar to this:

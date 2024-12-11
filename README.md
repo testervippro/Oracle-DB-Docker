@@ -33,7 +33,7 @@ docker run --name oracle-19c `
 -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata `
 cuxuanthoai/oracle-19c:customized
 ```
-
+Can change -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata to your path
 The container is successfully running when you see output similar to this:
 
 ---

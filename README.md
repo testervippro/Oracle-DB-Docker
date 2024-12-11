@@ -10,12 +10,6 @@ A quick and easy guide to setting up Oracle Database using Docker.
    - Download and install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop).
    - Ensure Docker Desktop is configured to use WSL 2.
 
-# Oracle 19c Docker Container Setup
-
-This guide outlines the steps to pull, run, and connect to an Oracle 19c database using Docker.
-
----
-
 ## **Step 1: Pull the Oracle 19c Docker Image**
 
 Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:

@@ -58,7 +58,7 @@ Run the following command to connect to the Oracle database and execute the `hr.
 Use powershell
 docker exec -it oracle-19c bash -c "echo -e \"exit\" | sqlplus sys/123456789@localhost:1521/orcl as sysdba "@/opt/oracle/1account.sql"
 docker exec -it oracle-19c bash -c "echo -e \"exit\" | sqlplus hr/hrpass@localhost:1521/orcl "@/opt/oracle/2createtable.sql"
-docker exec -it oracle-19c bash -c "echo -e \"exit\" | sqlplus hr/hrpass@localhost:1521/orcl "@/opt/oracle/3populate.sql"
+docker exec -it oracle-19c bash -c " sqlplus hr/hrpass@localhost:1521/orcl "@/opt/oracle/3populate.sql"
 
 
 

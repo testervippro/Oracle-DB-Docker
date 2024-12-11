@@ -1,5 +1,4 @@
 
-```markdown
 # Oracle-DB-Fast-Setup
 
 A quick and easy guide to setting up Oracle Database using Docker.
@@ -24,9 +23,9 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 Step 1: Pull the Oracle 19c Docker Image
 Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
 
-bash
+```bash
 docker pull cuxuanthoai/oracle-19c:customized
-``` 
+```
 # Oracle Container Setup
 
 The container is successfully running when you see output similar to this:

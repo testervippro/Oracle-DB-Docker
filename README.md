@@ -6,7 +6,10 @@ A quick and easy guide to setting up Oracle Database using Docker.
 ## **Prerequisites**
 
 1. **Install Docker Desktop**  
-   - Download and install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop). 
+   - Download and install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop).
+   -  Enable virtualization on Windows
+  ![image](https://github.com/user-attachments/assets/7dcacad1-3370-4e10-8da8-243458ff7300)
+
 
 ## **Step 1: Pull the Oracle 19c Docker Image**
 

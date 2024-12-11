@@ -32,7 +32,7 @@ This guide outlines the steps to pull, run, and connect to an Oracle 19c databas
 Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
 
 ```powershell
-docker pull cuxuanthoai/oracle-19c
+docker pull cuxuanthoai/oracle-19c:customized
 
 run file run.ps1
 # Oracle Container Setup

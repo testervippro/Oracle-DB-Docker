@@ -1,3 +1,6 @@
+Here's a reformatting of your content into markdown format suitable for a Git repository:
+
+```markdown
 # Oracle-DB-Fast-Setup
 
 A quick and easy guide to setting up Oracle Database using Docker.
@@ -10,6 +13,7 @@ A quick and easy guide to setting up Oracle Database using Docker.
    - Download and install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop).
    - Ensure Docker Desktop is configured to use WSL 2.
 
+---
 
 # Oracle 19c Docker Container Setup
 
@@ -23,8 +27,9 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 
 ```powershell
 docker pull cuxuanthoai/oracle-19c:customized
+```
 
-Copy script in run.ps1 and run it
+**Copy script in run.ps1 and run it**  
 # Oracle Container Setup
 
 The container is successfully running when you see output similar to this:
@@ -45,18 +50,18 @@ The container is successfully running when you see output similar to this:
 Run the following command to connect to the Oracle database and execute the `hr.sql` script:
 
 ```bash
-Use powershell
 docker exec -it oracle-19c bash -c "echo 'exit' | sqlplus sys/123456789@localhost:1521/orcl as sysdba @/opt/oracle/1account.sql"
 docker exec -it oracle-19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1521/orcl @/opt/oracle/2createtable.sql"
 docker exec -it oracle-19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1521/orcl @/opt/oracle/3populate.sql"
+```
 
+---
 
+## Note 
 
+### Deleting All Data for HR User in Oracle Database
 
-Note 
-# Deleting All Data for HR User in Oracle Database
-
-## SQL Script to Delete All Data for HR User
+### SQL Script to Delete All Data for HR User
 
 ```sql
 BEGIN
@@ -65,24 +70,21 @@ BEGIN
    END LOOP;
 END;
 DROP USER HR CASCADE;
+```
 
+---
 
-. **Configure WSL 2**  
-   Create or edit the `.wslconfig` file in your user directory (`C:\Users\<YourUsername>\`) to optimize WSL 2 resources.
+## **Configure WSL 2**  
+Create or edit the `.wslconfig` file in your user directory (`C:\Users\<YourUsername>\`) to optimize WSL 2 resources.
 
-   ### **.wslconfig**
-   ```ini
-   [wsl2]
-   memory=2GB   # Limits VM memory in WSL 2 up to 2GB
-   processors=2 # Makes the WSL 2 VM use two virtual processors
+### **.wslconfig**
 
+```ini
+[wsl2]
+memory=2GB   # Limits VM memory in WSL 2 up to 2GB
+processors=2 # Makes the WSL 2 VM use two virtual processors
+```
 
+```
 
-
-
-
-
-
-
-
-
+This format ensures proper markdown formatting for Git repositories.

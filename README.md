@@ -88,7 +88,7 @@ DROP USER HR CASCADE;
 
 ---
 
-## **Configure WSL 2**  
+## **Configure WSL 2 ( because docker window consuming very memory**  
 Create or edit the `.wslconfig` file in your user directory (`C:\Users\<YourUsername>\`) to optimize WSL 2 resources.
 
 ### **.wslconfig**

@@ -60,6 +60,15 @@ docker exec -it oracle-19c bash -c "echo -e \"exit\" | sqlplus sys/123456789@loc
 docker exec -it oracle-19c bash -c "echo -e \"exit\" | sqlplus hr/hrpass@localhost:1521/orcl "@/opt/oracle/2createtable.sql"
 docker exec -it oracle-19c bash -c " sqlplus hr/hrpass@localhost:1521/orcl "@/opt/oracle/3populate.sql"
 
+# To delete all data HR user
+
+BEGIN
+   FOR rec IN (SELECT SID, SERIAL# FROM V$SESSION WHERE USERNAME = 'HR') LOOP
+      EXECUTE IMMEDIATE 'ALTER SYSTEM KILL SESSION ''' || rec.SID || ',' || rec.SERIAL# || ''' IMMEDIATE';
+   END LOOP;
+   DROP USER HR CASCADE;
+END;
+
 
 
 

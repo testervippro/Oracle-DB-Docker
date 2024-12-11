@@ -96,4 +96,3 @@ processors=2 # Makes the WSL 2 VM use two virtual processors
 
 ```
 
-This format ensures proper markdown formatting for Git repositories.

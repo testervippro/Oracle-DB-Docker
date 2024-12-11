@@ -78,8 +78,6 @@ DROP USER HR CASCADE;
    memory=2GB   # Limits VM memory in WSL 2 up to 2GB
    processors=2 # Makes the WSL 2 VM use two virtual processors
 
-![image](https://github.com/user-attachments/assets/224afca4-25fc-4979-86db-75fe0b6319ee)
-
 
 
 

@@ -3,7 +3,6 @@
 
 A quick and easy guide to setting up Oracle Database using Docker.
 
-
 ## **Prerequisites**
 
 1. **Install Docker Desktop**  
@@ -20,7 +19,18 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 ```bash
 docker pull cuxuanthoai/oracle-19c:customized
 ```
-# Oracle Container Setup
+#**Step 2 Oracle Container Setup
+
+Run container 
+```bash
+docker run --name oracle-19c `
+-p 1521:1521 `
+--env ORACLE_SID=orcl `
+--env ORACLE_PWD=123456789 `
+--env ORACLE_MEM=2000 `
+-v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata `
+cuxuanthoai/oracle-19c:customized
+```
 
 The container is successfully running when you see output similar to this:
 
@@ -37,7 +47,7 @@ The container is successfully running when you see output similar to this:
 - **Username**: HR  
 - **Password**: hrpass  
 
-Run the following command to connect to the Oracle database and execute the `hr.sql` script:
+**Step 3 Run the following command to connect to the Oracle database and execute the `hr.sql` script:
 
 Here's the re-written command for each step separated:
 

@@ -1,19 +1,15 @@
-Here's a reformatting of your content into markdown format suitable for a Git repository:
 
 ```markdown
 # Oracle-DB-Fast-Setup
 
 A quick and easy guide to setting up Oracle Database using Docker.
 
----
 
 ## **Prerequisites**
 
 1. **Install Docker Desktop**  
    - Download and install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop).
    - Ensure Docker Desktop is configured to use WSL 2.
-
----
 
 # Oracle 19c Docker Container Setup
 
@@ -25,9 +21,10 @@ This guide outlines the steps to pull, run, and connect to an Oracle 19c databas
 
 Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
 
+Step 1: Pull the Oracle 19c Docker Image
+Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
 
-**Copy script in run.ps1 and run it**
-```bash
+bash
 docker pull cuxuanthoai/oracle-19c:customized
 ``` 
 # Oracle Container Setup

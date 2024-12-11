@@ -49,11 +49,21 @@ The container is successfully running when you see output similar to this:
 
 Run the following command to connect to the Oracle database and execute the `hr.sql` script:
 
+Here's the re-written command for each step separated:
+
 ```bash
 docker exec -it oracle-19c bash -c "echo 'exit' | sqlplus sys/123456789@localhost:1521/orcl as sysdba @/opt/oracle/1account.sql"
+```
+
+```bash
 docker exec -it oracle-19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1521/orcl @/opt/oracle/2createtable.sql"
+```
+
+```bash
 docker exec -it oracle-19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1521/orcl @/opt/oracle/3populate.sql"
 ```
+
+These commands run each SQL script sequentially within the Oracle 19c Docker container.
 
 ---
 

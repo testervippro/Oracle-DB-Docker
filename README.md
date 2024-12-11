@@ -19,7 +19,7 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 ```bash
 docker pull cuxuanthoai/oracle-19c:customized
 ```
-# **Step 2 Oracle Container Setup
+## **Step 2 Oracle Container Setup
 
 Run container 
 ```bash
@@ -47,7 +47,7 @@ The container is successfully running when you see output similar to this:
 - **Username**: HR  
 - **Password**: hrpass  
 
-**Step 3 Run the following command sequence to connect to the Oracle database:
+## **Step 3 Run the following command sequence to connect to the Oracle database:
 
 
 ```bash

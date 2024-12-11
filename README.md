@@ -66,11 +66,7 @@ These commands run each SQL script sequentially within the Oracle 19c Docker con
 
 ---
 
-## Note 
-
 ### Deleting All Data for HR User in Oracle Database
-
-### SQL Script to Delete All Data for HR User
 
 ```sql
 BEGIN

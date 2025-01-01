@@ -68,6 +68,11 @@ docker exec -it oracle-19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1
 
 These commands run each SQL script sequentially within the Oracle 19c Docker container.
 
+### HR ERD 
+Here's the ERD of the HR schema used:
+![image](https://github.com/user-attachments/assets/2997cb01-ed69-49fe-82d4-5bc2302fa782)
+
+
 Test query from database 
 
 ![image](https://github.com/user-attachments/assets/56b66741-6115-466f-9521-da204c4d4ff5)

@@ -31,7 +31,7 @@ C:\Users\ad\Documents\Oracle\oracle-19c\oradata
 
 Mac
 
-C:\Users\ad\Documents\Oracle\oracle-19c\oradata
+/Users/mac/Documents/oracle/oracle19c/oradata
 
 Run container on Win
 ```bash

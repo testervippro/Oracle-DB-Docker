@@ -33,7 +33,20 @@ docker run --name oracle19c `
 -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata `
 cuxuanthoai/oracle19c:v1
 ```
+
+Run on Mac
+
+```bash
+docker run --name oracle19c \
+-p 1521:1521 \
+--env ORACLE_SID=orcl \
+--env ORACLE_PWD=123456789 \
+--env ORACLE_MEM=2000 \
+-v /Users/mac/Documents/oracle/oracle19c/oradata:/opt/oracle/oradata \
+cuxuanthoai/oracle19c:v1
+```
 Can change -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata to your path 
+
 
 
 The container is successfully running when you see output similar to this:

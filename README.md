@@ -97,6 +97,11 @@ Here's the ERD of the HR schema used:
 ![image](https://github.com/user-attachments/assets/2997cb01-ed69-49fe-82d4-5bc2302fa782)
 
 
+Connect to HR
+
+<img width="854" alt="Screen Shot 2025-01-02 at 00 50 06" src="https://github.com/user-attachments/assets/b8bae0a7-1ea7-4932-874e-8588e3f7ae7d" />
+
+
 Test query from database 
 
 ![image](https://github.com/user-attachments/assets/56b66741-6115-466f-9521-da204c4d4ff5)

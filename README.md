@@ -23,6 +23,16 @@ docker pull cuxuanthoai/oracle-19c:customized
 ```
 ## **Step 2 Oracle Container Setup
 
+Create folder before run container 
+
+Win
+
+C:\Users\ad\Documents\Oracle\oracle-19c\oradata
+
+Mac
+
+C:\Users\ad\Documents\Oracle\oracle-19c\oradata
+
 Run container on Win
 ```bash
 docker run --name oracle19c `
@@ -45,17 +55,7 @@ docker run --name oracle19c \
 -v /Users/mac/Documents/oracle/oracle19c/oradata:/opt/oracle/oradata \
 cuxuanthoai/oracle19c:v1
 ```
-Can change -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata to your path 
 
-Create folder before run container 
-
-Win
-
-C:\Users\ad\Documents\Oracle\oracle-19c\oradata
-
-Mac
-
-C:\Users\ad\Documents\Oracle\oracle-19c\oradata
 
 
 

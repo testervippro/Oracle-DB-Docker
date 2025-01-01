@@ -46,10 +46,15 @@ docker run --name oracle19c \
 cuxuanthoai/oracle19c:v1
 ```
 Can change -v C:\Users\ad\Documents\Oracle\oracle-19c\oradata:/opt/oracle/oradata to your path 
+
 Create folder before run container 
+
 Win
+
 C:\Users\ad\Documents\Oracle\oracle-19c\oradata
+
 Mac
+
 C:\Users\ad\Documents\Oracle\oracle-19c\oradata
 
 

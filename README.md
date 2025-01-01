@@ -19,7 +19,7 @@ Step 1: Pull the Oracle 19c Docker Image
 Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
 
 ```bash
-docker pull cuxuanthoai/oracle-19c:customized
+docker pull cuxuanthoai/oracle19c:v1
 ```
 ## **Step 2 Oracle Container Setup
 

@@ -69,10 +69,6 @@ The container is successfully running when you see output similar to this:
 
 ---
 
-### Once the container is running, use SQL*Plus to connect to the Oracle database:
-
-- **Username**: HR  
-- **Password**: hrpass  
 
 ## **Step 3 Run the following command sequence to connect create data to the Oracle database:
 
@@ -90,6 +86,11 @@ docker exec -it oracle-19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1
 ```
 
 These commands run each SQL script sequentially within the Oracle 19c Docker container.
+
+### Once the finished use this account connect to the Oracle database :
+
+- **Username**: HR  
+- **Password**: hrpass  
 
 ### HR ERD 
 Here's the ERD of the HR schema used:

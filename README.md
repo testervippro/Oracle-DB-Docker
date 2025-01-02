@@ -21,7 +21,7 @@ Run the following command in PowerShell to pull the Oracle 19c image from Docker
 ```bash
 docker pull cuxuanthoai/oracle19c:v1
 ```
-## **Step 2 Oracle Container Setup
+## **Step 2 Oracle Container Setup**
 
 Create folder before run container 
 
@@ -70,7 +70,7 @@ The container is successfully running when you see output similar to this:
 ---
 
 
-## **Step 3 Run the following command sequence to connect create data to the Oracle database:
+## **Step 3 Run the following command sequence to connect create data to the Oracle database:**
 
 
 ```bash

@@ -75,7 +75,7 @@ The container is successfully running when you see output similar to this:
 Run one cmd
 
 ```bash
-docker exec -it oracle-19c bash -c "cd /opt/oracle/db-sample-schemas-main/human_resources && sqlplus sys/123456789@localhost:1521/orcl as sysdba @hr_install.sql"
+docker exec -it oracle19c bash -c "cd /opt/oracle/db-sample-schemas-main/human_resources && sqlplus sys/123456789@localhost:1521/orcl as sysdba @hr_install.sql"
 ```
 
 

@@ -56,6 +56,12 @@ docker run --name oracle-19c \
 cuxuanthoai/oracle-19c:v1
 ```
 
+After this time can execute 
+
+```bash
+docker start oracle-19c
+```
+
 
 
 

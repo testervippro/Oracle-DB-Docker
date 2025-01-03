@@ -1,7 +1,7 @@
 
-# Oracle-DB-Fast-Setup
+# Oracle-DB-Docker
 
-A fast and easy guide to setting up Oracle Database using Docker.
+A setting up Oracle Database using Docker.
 
 ## **Prerequisites**
 

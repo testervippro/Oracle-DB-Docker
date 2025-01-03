@@ -56,11 +56,20 @@ docker run --name oracle-19c \
 cuxuanthoai/oracle-19c:v1
 ```
 
-After this time can execute 
+After this time can use 
 
 ```bash
 docker start oracle-19c
 ```
+After this time can use this to start
+
+```bash
+docker stop oracle-19c
+```
+```bash
+docker restart oracle-19c
+```
+
 
 
 

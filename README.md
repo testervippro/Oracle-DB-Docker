@@ -72,6 +72,11 @@ The container is successfully running when you see output similar to this:
 
 ## **Step 3 Run the following command sequence to connect create data to the Oracle database:**
 
+Run one cmd
+
+```bash
+docker exec -it oracle-19c bash -c "cd /opt/oracle/db-sample-schemas-main/human_resources && sqlplus sys/123456789@ORCLPDB1 as sysdba @hr_install.sql"
+```
 
 ```bash
 docker exec -it oracle19c bash -c "echo 'exit' | sqlplus sys/123456789@localhost:1521/orcl as sysdba @/opt/oracle/1account.sql"

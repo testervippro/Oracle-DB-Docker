@@ -61,8 +61,6 @@ After this time can use
 ```bash
 docker start oracle-19c
 ```
-After this time can use this to start
-
 ```bash
 docker stop oracle-19c
 ```

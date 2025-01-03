@@ -78,24 +78,13 @@ Run one cmd
 docker exec -it oracle-19c bash -c "cd /opt/oracle/db-sample-schemas-main/human_resources && sqlplus sys/123456789@localhost:1521/orcl as sysdba @hr_install.sql"
 ```
 
-```bash
-docker exec -it oracle19c bash -c "echo 'exit' | sqlplus sys/123456789@localhost:1521/orcl as sysdba @/opt/oracle/1account.sql"
-```
 
-```bash
-docker exec -it oracle19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1521/orcl @/opt/oracle/2createtable.sql"
-```
 
-```bash
-docker exec -it oracle19c bash -c "echo 'EXIT;' | sqlplus hr/hrpass@localhost:1521/orcl @/opt/oracle/3populate.sql"
-```
-
-These commands run each SQL script sequentially within the Oracle 19c Docker container.
 
 ### Once the finished use this account connect to the Oracle database :
 
 - **Username**: HR  
-- **Password**: hrpass  
+- **Password**: hr  
 
 ### HR ERD 
 Here's the ERD of the HR schema used:

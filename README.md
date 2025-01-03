@@ -19,7 +19,7 @@ Step 1: Pull the Oracle 19c Docker Image
 Run the following command in PowerShell to pull the Oracle 19c image from Docker Hub:
 
 ```bash
-docker pull cuxuanthoai/oracle19c:v1
+docker pull cuxuanthoai/oracle-19c:v1
 ```
 ## **Step 2 Oracle Container Setup**
 
@@ -35,7 +35,7 @@ Mac
 
 Run container on Win
 ```bash
-docker run --name oracle19c `
+docker run --name oracle-19c `
 -p 1521:1521 `
 --env ORACLE_SID=orcl `
 --env ORACLE_PWD=123456789 `
@@ -47,13 +47,13 @@ cuxuanthoai/oracle19c:v1
 Run container on Mac
 
 ```bash
-docker run --name oracle19c \
+docker run --name oracle-19c \
 -p 1521:1521 \
 --env ORACLE_SID=orcl \
 --env ORACLE_PWD=123456789 \
 --env ORACLE_MEM=2000 \
 -v /Users/mac/Documents/oracle/oracle19c/oradata:/opt/oracle/oradata \
-cuxuanthoai/oracle19c:v1
+cuxuanthoai/oracle-19c:v1
 ```
 
 

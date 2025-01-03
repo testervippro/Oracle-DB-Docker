@@ -104,20 +104,10 @@ Test query from database
 Link refer  detail more schema 
 
 
-https://github.com/bbrumm/databasestar/tree/main/sample_databases/oracle_hr
+https://github.com/oracle-samples/db-sample-schemas
 
 ---
 
-### Deleting All Data for HR User in Oracle Database
-
-```sql
-BEGIN
-   FOR rec IN (SELECT SID, SERIAL# FROM V$SESSION WHERE USERNAME = 'HR') LOOP
-      EXECUTE IMMEDIATE 'ALTER SYSTEM KILL SESSION ''' || rec.SID || ',' || rec.SERIAL# || ''' IMMEDIATE';
-   END LOOP;
-END;
-DROP USER HR CASCADE;
-```
 
 ---
 

@@ -127,6 +127,12 @@ https://github.com/oracle-samples/db-sample-schemas
 ## **Configure WSL 2 ( because docker window consuming very memory)**  
 Create or edit the `.wslconfig` file in your user directory (`C:\Users\<YourUsername>\`) to optimize WSL 2 resources.
 
+### **Check current user**
+
+```bash
+echo %USERNAME%
+```
+
 ### **.wslconfig**
 
 ```ini
